@@ -2,10 +2,10 @@
 import { connect } from 'cloudflare:sockets';
 
 let subPath = 'link';     // 节点订阅路径,不修改将使用/sub/${UUID}作为订阅路径
-let proxyIP = '13.230.34.30';  // proxyIP
-let yourUUID = '5dc15e15-f285-4a9d-959b-0e4fbdd77b63'; // UUID
+let proxyIP = '128.199.0.28';  // proxyIP
+let yourUUID = '029880eb-9249-4466-8d7e-6cce1d2ac68d'; // UUID
 
-let cfip = [ 'mfa.gov.ua#SG','saas.sin.fan#HK','store.ubi.com#JP','cf.130519.xyz#KR','cf.008500.xyz#HK','cf.090227.xyz#SG','cf.877774.xyz#HK','cdns.doon.eu.org#JP','sub.danfeng.eu.org#TW','cf.zhetengsha.eu.org#HK'];
+let cfip = [ '104.17.73.206'];
 
 function closeSocketQuietly(socket) { 
     try { if (socket.readyState === WebSocket.OPEN || socket.readyState === WebSocket.CLOSING) { socket.close(); }
