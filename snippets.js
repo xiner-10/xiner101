@@ -1,12 +1,10 @@
 import { connect } from 'cloudflare:sockets';
 
-let proxyIP = 'proxy.xxxxxxxx.tk:50001';  // proxyIP，也可以是socks5或http
-let yourUUID = '93bf61d9-3796-44c2-9b3a-49210ece2585';  // UUID
+let proxyIP = '128.199.0.28';  // proxyIP，也可以是socks5或http
+let yourUUID = '029880eb-9249-4466-8d7e-6cce1d2ac68d';  // UUID
 
 // CDN 
-let cfip = [ // 格式:优选域名:端口#备注名称、优选IP:端口#备注名称、[ipv6优选]:端口#备注名称、优选域名#备注 
-    'mfa.gov.ua#SG', 'saas.sin.fan#HK', 'store.ubi.com#JP','cf.130519.xyz#KR','cf.008500.xyz#HK', 
-    'cf.090227.xyz#SG', 'cf.877774.xyz#HK','cdns.doon.eu.org#JP','sub.danfeng.eu.org#TW','cf.zhetengsha.eu.org#HK'
+let cfip = [ // 格式:优选域名:端口#备注名称、优选IP:端口#备注名称、[ipv6优选]:端口#备注名称、优选域名#备注 '104.17.73.206'
 ];  // 在此感谢各位大佬维护的优选域名
 
 function getHomePageHTML(currentDomain) {
