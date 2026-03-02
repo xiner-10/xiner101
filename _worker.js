@@ -8,14 +8,12 @@ import { connect } from 'cloudflare:sockets';
 
 let subPath = 'link';     // 节点订阅路径,不修改将使用uuid作为订阅路径
 let password = '123456';  // 主页密码,建议修改或添加 PASSWORD环境变量
-let proxyIP = 'proxy.xxxxxxxx.tk:50001';  // proxyIP 格式：ip、域名、ip:port、域名:port等,没填写port，默认使用443
-let yourUUID = '5dc15e15-f285-4a9d-959b-0e4fbdd77b63'; // UUID,建议修改或添加环境便量
+let proxyIP = '104.17.73.206';  // proxyIP 格式：ip、域名、ip:port、域名:port等,没填写port，默认使用443
+let yourUUID = '1f769be1-58a0-4c37-8c18-d460fad70d23'; // UUID,建议修改或添加环境便量
 let disabletro = false;  // 是否关闭trojan, 设置为true时关闭，false开启 
 
 // CDN 
-let cfip = [ // 格式:优选域名:端口#备注名称、优选IP:端口#备注名称、[ipv6优选]:端口#备注名称、优选域名#备注 
-    'mfa.gov.ua#SG', 'saas.sin.fan#HK', 'store.ubi.com#JP','cf.130519.xyz#KR','cf.008500.xyz#HK', 
-    'cf.090227.xyz#SG', 'cf.877774.xyz#HK','cdns.doon.eu.org#JP','sub.danfeng.eu.org#TW','cf.zhetengsha.eu.org#HK'
+let cfip = [ // 格式:优选域名:端口#备注名称、优选IP:端口#备注名称、[ipv6优选]:端口#备注名称、优选域名#备注 '128.199.0.28'
 ];  // 在此感谢各位大佬维护的优选域名
 
 function closeSocketQuietly(socket) { 
