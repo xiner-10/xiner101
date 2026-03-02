@@ -8,12 +8,12 @@ import { connect } from 'cloudflare:sockets';
 
 let subPath = 'link';     // 节点订阅路径,不修改将使用uuid作为订阅路径
 let password = '5188';  // 主页密码,建议修改或添加 PASSWORD环境变量
-let proxyIP = '104.17.73.206';  // proxyIP 格式：ip、域名、ip:port、域名:port等,没填写port，默认使用443
+let proxyIP = '128.199.0.28';  // proxyIP 格式：ip、域名、ip:port、域名:port等,没填写port，默认使用443
 let yourUUID = '029880eb-9249-4466-8d7e-6cce1d2ac68d'; // UUID,建议修改或添加环境便量
 let disabletro = false;  // 是否关闭trojan, 设置为true时关闭，false开启 
 
 // CDN 
-let cfip = [ // 格式:优选域名:端口#备注名称、优选IP:端口#备注名称、[ipv6优选]:端口#备注名称、优选域名#备注 '128.199.0.28'
+let cfip = [ // 格式:优选域名:端口#备注名称、优选IP:端口#备注名称、[ipv6优选]:端口#备注名称、优选域名#备注 '104.17.73.206'
 ];  // 在此感谢各位大佬维护的优选域名
 
 function closeSocketQuietly(socket) { 
